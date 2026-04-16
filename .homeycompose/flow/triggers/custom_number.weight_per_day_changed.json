@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The weight per day changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.weight_per_day"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "custom_number.weight_per_day",
+      "type": "number",
+      "title": {
+        "en": "Weight per day"
+      },
+      "example": 32
+    }
+  ]
+}

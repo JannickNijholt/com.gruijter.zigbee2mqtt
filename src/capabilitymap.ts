@@ -199,10 +199,16 @@ const capabilityMap: { [key: string]: CapabilityMapEntry } = {
   battery_low: ['alarm_battery', (v) => v],
   lock: ['locked', (v) => v, (v) => ({ lock: v ? 'LOCK' : 'UNLOCK' })],
   child_lock: ['locked.child', (v) => v === 'LOCK', (v) => ({ child_lock: v ? 'LOCK' : 'UNLOCK' })],
+  led_indicator: ['onoff.led_indicator', (v) => v === 'ON', (v) => ({ led_indicator: v ? 'ON' : 'OFF' })],
   garage_door_contact: ['garagedoor_closed', (v) => v],
 
   // Custom number capabilities
   linkquality: ['measure_linkquality', (v) => Number(v)],
+  feeding_size: ['custom_number.feeding_size', (v) => Number(v)],
+  portions_per_day: ['custom_number.portions_per_day', (v) => Number(v)],
+  weight_per_day: ['custom_number.weight_per_day', (v) => Number(v)],
+  serving_size: ['custom_number.serving_size', (v) => Number(v), (v) => ({ serving_size: Number(v) })],
+  portion_weight: ['custom_number.portion_weight', (v) => Number(v), (v) => ({ portion_weight: Number(v) })],
   strength: ['meter_strength', (v) => Number(v)],
   angle_x: ['meter_angle_x', (v) => Number(v)],
   angle_y: ['meter_angle_y', (v) => Number(v)],
@@ -219,6 +225,9 @@ const capabilityMap: { [key: string]: CapabilityMapEntry } = {
   siren_state: ['siren_state', (v) => (v || '').toString()],
 
   // Custom settable ENUM capabilities
+  feed: ['feed', (v) => v, () => ({ feed: 'START' })], // [START]
+  feeding_source: ['feeding_source', (v) => v], // [schedule, manual, remote]
+  mode: ['feeding_mode', (v) => v, (v) => ({ mode: v })], // [schedule, manual]
   battery_state: ['battery_state', (v) => v],
   preset: ['preset', (v) => v, (v) => ({ preset: v })], // ["auto", "manual", "holiday"]
   power_on_behavior: ['power_on_behavior', (v) => v, (v) => ({ power_on_behavior: v })], // [off, on, toggle, previous]
@@ -243,6 +252,7 @@ const capabilityMap: { [key: string]: CapabilityMapEntry } = {
   sensitivity: ['sensitivity', (v) => v, (v) => ({ sensitivity: v })], // [low, medium, high]
   motion_sensitivity: ['sensitivity.motion', (v) => v, (v) => ({ motion_sensitivity: v })], // [low, medium, high]
   pilot_wire_mode: ['pilot_wire_mode', (v) => v, (v) => ({ pilot_wire_mode: v })], // [comfort, eco, frost_protection, off, comfort_-1, comfort_-2]
+  error: ['alarm_problem', (v) => v === true || v === 'ON'],
 };
 
 // Define the skip map for specific device models (model name -> capabilities to skip)

@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The portion weight changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.portion_weight"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "custom_number.portion_weight",
+      "type": "number",
+      "title": {
+        "en": "Portion weight"
+      },
+      "example": 8
+    }
+  ]
+}

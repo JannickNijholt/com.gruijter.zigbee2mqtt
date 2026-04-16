@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The serving size changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.serving_size"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "custom_number.serving_size",
+      "type": "number",
+      "title": {
+        "en": "Serving size"
+      },
+      "example": 1
+    }
+  ]
+}

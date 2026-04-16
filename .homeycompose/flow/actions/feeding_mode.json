@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "Set feeding mode"
+  },
+  "titleFormatted": {
+    "en": "Set feeding mode to [[val]]"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=feeding_mode"
+    },
+    {
+      "type": "dropdown",
+      "name": "val",
+      "values": [
+        {
+          "id": "schedule",
+          "title": {
+            "en": "Schedule"
+          }
+        },
+        {
+          "id": "manual",
+          "title": {
+            "en": "Manual"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The portions per day changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.portions_per_day"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "custom_number.portions_per_day",
+      "type": "number",
+      "title": {
+        "en": "Portions per day"
+      },
+      "example": 4
+    }
+  ]
+}

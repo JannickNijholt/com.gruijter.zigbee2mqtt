@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The feeding source changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=feeding_source"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "feeding_source",
+      "type": "string",
+      "title": {
+        "en": "Feeding source"
+      },
+      "example": "schedule"
+    }
+  ]
+}

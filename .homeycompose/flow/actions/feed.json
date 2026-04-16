@@ -1,0 +1,28 @@
+{
+  "title": {
+    "en": "Start feeding"
+  },
+  "titleFormatted": {
+    "en": "Start feeding [[val]]"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=feed"
+    },
+    {
+      "type": "dropdown",
+      "name": "val",
+      "values": [
+        {
+          "id": "START",
+          "title": {
+            "en": "Start"
+          }
+        }
+      ]
+    }
+  ]
+}

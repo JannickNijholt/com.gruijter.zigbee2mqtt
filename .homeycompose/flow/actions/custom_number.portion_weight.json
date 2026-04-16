@@ -1,0 +1,26 @@
+{
+  "title": {
+    "en": "Set portion weight"
+  },
+  "titleFormatted": {
+    "en": "Set portion weight to [[val]]"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.portion_weight"
+    },
+    {
+      "name": "val",
+      "type": "range",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "value": 8,
+      "label": "g",
+      "labelDecimals": 0
+    }
+  ]
+}

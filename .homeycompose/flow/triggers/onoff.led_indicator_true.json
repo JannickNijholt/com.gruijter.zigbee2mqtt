@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "LED indicator turned On"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=onoff.led_indicator"
+    }
+  ]
+}

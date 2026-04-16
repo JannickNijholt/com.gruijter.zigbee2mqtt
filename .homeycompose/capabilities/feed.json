@@ -1,0 +1,18 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Feed"
+  },
+  "values": [
+    {
+      "id": "START",
+      "title": {
+        "en": "Start"
+      }
+    }
+  ],
+  "uiComponent": "picker",
+  "getable": false,
+  "setable": true,
+  "insights": false
+}

@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The feeding mode changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=feeding_mode"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "feeding_mode",
+      "type": "string",
+      "title": {
+        "en": "Feeding mode"
+      },
+      "example": "schedule"
+    }
+  ]
+}

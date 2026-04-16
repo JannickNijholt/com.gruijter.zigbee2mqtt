@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The feeding size changed"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=device|group&capabilities=custom_number.feeding_size"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "custom_number.feeding_size",
+      "type": "number",
+      "title": {
+        "en": "Feeding size"
+      },
+      "example": 2
+    }
+  ]
+}

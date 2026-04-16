@@ -1,6 +1,6 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
-  "id": "com.gruijter.zigbee2mqtt",
+  "id": "com.gruijter.zigbee2mqtt.test",
   "version": "3.1.8",
   "compatibility": ">=12.9.0",
   "sdk": 3,
@@ -8,18 +8,18 @@
     "local"
   ],
   "name": {
-    "en": "Zigbee2MQTT",
-    "nl": "Zigbee2MQTT",
-    "da": "Zigbee2MQTT",
-    "de": "Zigbee2MQTT",
-    "es": "Zigbee2MQTT",
-    "fr": "Zigbee2MQTT",
-    "it": "Zigbee2MQTT",
-    "no": "Zigbee2MQTT",
-    "sv": "Zigbee2MQTT",
-    "pl": "Zigbee2MQTT",
-    "ru": "Zigbee2MQTT",
-    "ko": "Zigbee2MQTT"
+    "en": "Zigbee2MQTT Test",
+    "nl": "Zigbee2MQTT Test",
+    "da": "Zigbee2MQTT Test",
+    "de": "Zigbee2MQTT Test",
+    "es": "Zigbee2MQTT Test",
+    "fr": "Zigbee2MQTT Test",
+    "it": "Zigbee2MQTT Test",
+    "no": "Zigbee2MQTT Test",
+    "sv": "Zigbee2MQTT Test",
+    "pl": "Zigbee2MQTT Test",
+    "ru": "Zigbee2MQTT Test",
+    "ko": "Zigbee2MQTT Test"
   },
   "description": {
     "en": "Use Zigbee devices via MQTT",
@@ -653,6 +653,102 @@
       },
       {
         "title": {
+          "en": "The feeding size changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.feeding_size"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "custom_number.feeding_size",
+            "type": "number",
+            "title": {
+              "en": "Feeding size"
+            },
+            "example": 2
+          }
+        ],
+        "id": "custom_number.feeding_size_changed"
+      },
+      {
+        "title": {
+          "en": "The portion weight changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.portion_weight"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "custom_number.portion_weight",
+            "type": "number",
+            "title": {
+              "en": "Portion weight"
+            },
+            "example": 8
+          }
+        ],
+        "id": "custom_number.portion_weight_changed"
+      },
+      {
+        "title": {
+          "en": "The portions per day changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.portions_per_day"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "custom_number.portions_per_day",
+            "type": "number",
+            "title": {
+              "en": "Portions per day"
+            },
+            "example": 4
+          }
+        ],
+        "id": "custom_number.portions_per_day_changed"
+      },
+      {
+        "title": {
+          "en": "The serving size changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.serving_size"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "custom_number.serving_size",
+            "type": "number",
+            "title": {
+              "en": "Serving size"
+            },
+            "example": 1
+          }
+        ],
+        "id": "custom_number.serving_size_changed"
+      },
+      {
+        "title": {
           "en": "The strength changed",
           "nl": "De sterkte veranderde",
           "da": "Styrken ændrede sig",
@@ -696,6 +792,30 @@
           }
         ],
         "id": "custom_number.strength_changed"
+      },
+      {
+        "title": {
+          "en": "The weight per day changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.weight_per_day"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "custom_number.weight_per_day",
+            "type": "number",
+            "title": {
+              "en": "Weight per day"
+            },
+            "example": 32
+          }
+        ],
+        "id": "custom_number.weight_per_day_changed"
       },
       {
         "title": {
@@ -834,6 +954,54 @@
           }
         ],
         "id": "fan_mode_changed"
+      },
+      {
+        "title": {
+          "en": "The feeding mode changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=feeding_mode"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "feeding_mode",
+            "type": "string",
+            "title": {
+              "en": "Feeding mode"
+            },
+            "example": "schedule"
+          }
+        ],
+        "id": "feeding_mode_changed"
+      },
+      {
+        "title": {
+          "en": "The feeding source changed"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=feeding_source"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "feeding_source",
+            "type": "string",
+            "title": {
+              "en": "Feeding source"
+            },
+            "example": "schedule"
+          }
+        ],
+        "id": "feeding_source_changed"
       },
       {
         "title": {
@@ -1836,6 +2004,34 @@
           }
         ],
         "id": "onoff.l4_true"
+      },
+      {
+        "title": {
+          "en": "LED indicator turned Off"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=onoff.led_indicator"
+          }
+        ],
+        "id": "onoff.led_indicator_false"
+      },
+      {
+        "title": {
+          "en": "LED indicator turned On"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=onoff.led_indicator"
+          }
+        ],
+        "id": "onoff.led_indicator_true"
       },
       {
         "title": {
@@ -3350,6 +3546,60 @@
       },
       {
         "title": {
+          "en": "Set portion weight"
+        },
+        "titleFormatted": {
+          "en": "Set portion weight to [[val]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.portion_weight"
+          },
+          {
+            "name": "val",
+            "type": "range",
+            "min": 1,
+            "max": 20,
+            "step": 1,
+            "value": 8,
+            "label": "g",
+            "labelDecimals": 0
+          }
+        ],
+        "id": "custom_number.portion_weight"
+      },
+      {
+        "title": {
+          "en": "Set serving size"
+        },
+        "titleFormatted": {
+          "en": "Set serving size to [[val]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=custom_number.serving_size"
+          },
+          {
+            "name": "val",
+            "type": "range",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "value": 1,
+            "label": "portion",
+            "labelDecimals": 0
+          }
+        ],
+        "id": "custom_number.serving_size"
+      },
+      {
+        "title": {
           "en": "Set a custom payload",
           "nl": "Stel een aangepaste payload in",
           "da": "Indstil en tilpasset payload",
@@ -3876,6 +4126,70 @@
           }
         ],
         "id": "fan_mode"
+      },
+      {
+        "title": {
+          "en": "Start feeding"
+        },
+        "titleFormatted": {
+          "en": "Start feeding [[val]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=feed"
+          },
+          {
+            "type": "dropdown",
+            "name": "val",
+            "values": [
+              {
+                "id": "START",
+                "title": {
+                  "en": "Start"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "feed"
+      },
+      {
+        "title": {
+          "en": "Set feeding mode"
+        },
+        "titleFormatted": {
+          "en": "Set feeding mode to [[val]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=feeding_mode"
+          },
+          {
+            "type": "dropdown",
+            "name": "val",
+            "values": [
+              {
+                "id": "schedule",
+                "title": {
+                  "en": "Schedule"
+                }
+              },
+              {
+                "id": "manual",
+                "title": {
+                  "en": "Manual"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "feeding_mode"
       },
       {
         "title": {
@@ -4797,6 +5111,30 @@
           }
         ],
         "id": "onoff.l4"
+      },
+      {
+        "title": {
+          "en": "Switch LED indicator On or Off"
+        },
+        "titleFormatted": {
+          "en": "LED indicator [[val]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=device|group&capabilities=onoff.led_indicator"
+          },
+          {
+            "type": "checkbox",
+            "name": "val",
+            "title": {
+              "en": "On"
+            }
+          }
+        ],
+        "id": "onoff.led_indicator"
       },
       {
         "title": {
@@ -9534,6 +9872,78 @@
       "uiComponent": "picker",
       "getable": true,
       "setable": true,
+      "insights": false
+    },
+    "feed": {
+      "type": "enum",
+      "title": {
+        "en": "Feed"
+      },
+      "values": [
+        {
+          "id": "START",
+          "title": {
+            "en": "Start"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "insights": false
+    },
+    "feeding_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Feeding mode"
+      },
+      "values": [
+        {
+          "id": "schedule",
+          "title": {
+            "en": "Schedule"
+          }
+        },
+        {
+          "id": "manual",
+          "title": {
+            "en": "Manual"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "getable": true,
+      "setable": true,
+      "insights": false
+    },
+    "feeding_source": {
+      "type": "enum",
+      "title": {
+        "en": "Feeding source"
+      },
+      "values": [
+        {
+          "id": "schedule",
+          "title": {
+            "en": "Schedule"
+          }
+        },
+        {
+          "id": "manual",
+          "title": {
+            "en": "Manual"
+          }
+        },
+        {
+          "id": "remote",
+          "title": {
+            "en": "Remote"
+          }
+        }
+      ],
+      "uiComponent": "picker",
+      "getable": true,
+      "setable": false,
       "insights": false
     },
     "indicator_mode": {

@@ -1,5 +1,5 @@
 {
-  "name": "com.gruijter.zigbee2mqtt",
+  "name": "com.gruijter.zigbee2mqtt.test",
   "version": "3.1.8",
   "main": "app.ts",
   "engines": {

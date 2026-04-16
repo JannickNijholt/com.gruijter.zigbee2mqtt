@@ -1,0 +1,30 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Feeding source"
+  },
+  "values": [
+    {
+      "id": "schedule",
+      "title": {
+        "en": "Schedule"
+      }
+    },
+    {
+      "id": "manual",
+      "title": {
+        "en": "Manual"
+      }
+    },
+    {
+      "id": "remote",
+      "title": {
+        "en": "Remote"
+      }
+    }
+  ],
+  "uiComponent": "picker",
+  "getable": true,
+  "setable": false,
+  "insights": false
+}
